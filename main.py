@@ -33,6 +33,8 @@ for line in bitmap.splitlines():
     for i, bit in enumerate(line):
         if bit == ' ':
             print(' ', end='')
+        elif bit == '.':
+            print('.', end='')
         else:
             print(message[i % len(message)], end='')
     print()
